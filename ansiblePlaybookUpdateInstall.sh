@@ -6,9 +6,10 @@ sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
-
+pip install --upgrade pip
+python3 -m pip install --user pip-upgrade-outdated
 #Get Ansible-Playbook
-sudo wget ‐‐directory-prefix=/etc/ansible https://gist.githubusercontent.com/OleksandrShlapak/baeb18c028dd3e8f23223717e55b7b12/raw/aa004aaae3f3c7c6e0e7c480938b0f7107fbd894/updateAgnoDependenciesPlaybook.yml
+sudo wget ‐‐directory-prefix=/etc/ansible https://gist.githubusercontent.com/OleksandrShlapak/4ba3e3a15eae62e99dd7dc035f9d49d8/raw/ansibleRaspberryFaceRecognitionPlaybook.yml 
 
 #Run Ansible Playbook
 ansible-playbook updateAgnoDependenciesPlaybook.yml --connection=local

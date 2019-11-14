@@ -1,5 +1,10 @@
 # raspberry_pi
-Everything concerning the raspberry pi will go here
+## Automated Installation of dependencies requiered for agnoMirror project
 
-NOT TESTED YET
-Both scripts update dependencies described in https://github.com/agno-ai/agnoMirror README.md Dependencies. You need to run only one
+ansiblePlaybookUpdateInstall.sh script and shellInstall/installDependencies.sh both install and update dependencies described in:  
+
+* [AgnoMirror](https://github.com/agno-ai/agnoMirror/)
+* [Website](https://github.com/agno-ai/website)
+* [Core](https://github.com/agno-ai/core) <br /><br />
+**ansiblePlaybookUpdateInstall.sh** downloads an ansible playbook from an updated gist link. <br />
+**shellInstall/installDependencies.sh** should be run as back up if ansiblePlaybookUpdateInstall encounter problems with regards to python version.
